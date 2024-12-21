@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Tables and Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4b754c;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        section {
+            margin: 2rem 0;
+        }
+
+        .two-columns {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .table-container {
+            flex: 1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f4f4f4;
+        }
+
+        form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        form input, form select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form .gender-options {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        form .gender-options label {
+            margin: 0;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Manny<span style="color: rgb(0, 0, 255, 0.5);">n</span>Caddi.inc</h2>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Contact Details</h2>
+            <div class="two-columns">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Phone Number</th>
+                                <th>Gender</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Emmanuel</td><td> 0241234567</td><td>Male</td></tr>
+                            <tr><td>Samuel</td><td>0209876543</td><td>Male</td></tr>
+                            <tr><td>Daniel</td><td>0552345678</td><td>Male</td></tr>
+                            <tr><td>Mary</td><td>0504567890</td><td>Female</td></tr>
+                            <tr><td>Rebecca</td><td>0266789012</td><td>Female</td></tr>
+                            <tr><td>John</td><td>0247890123</td><td>Male</td></tr>
+                            <tr><td>Grace</td><td>0278901234</td><td>Female</td></tr>
+                            <tr><td>Michael</td><td>0239012345</td><td>Male</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Phone Number</th>
+                                <th>Gender</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Emmanuel</td><td>0241234567</td><td>Male</td></tr>
+                            <tr><td>Samuel</td><td>0209876543</td><td>Male</td></tr>
+                            <tr><td>Daniel</td><td>055234 5678</td><td>Male</td></tr>
+                            <tr><td>Mary</td><td>0504567890</td><td>Female</td></tr>
+                            <tr><td>Rebecca</td><td>0266789012</td><td>Female</td></tr>
+                            <tr><td>John</td><td>0247890123</td><td>Male</td></tr>
+                            <tr><td>Grace</td><td>0278901234</td><td>Female</td></tr>
+                            <tr><td>Michael</td><td>0239012345</td><td>Male</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Registration Form</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+
+                <label>Gender</label>
+                <div class="gender-options">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                </div>
+
+                <label for="telephone">Telephone</label>
+                <input type="tel" id="telephone" name="telephone" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>MannynCaddi.inc All rights reserved.</p>
+    </footer>
+</body>
+</html>
